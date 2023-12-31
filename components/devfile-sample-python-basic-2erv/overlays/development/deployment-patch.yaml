@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-2erv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-tnyd-tenant/test-app-jpdq/devfile-sample-python-basic-2erv@sha256:cf4de192f7311853016f048c3f32364d9d20c2bc24e609acc5e03b3d0b6a3313
+        name: my-python
+        resources: {}
+status: {}
